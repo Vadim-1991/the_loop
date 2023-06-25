@@ -1,0 +1,125 @@
+$accent: #D7B399;
+$dark: #212121;
+$light: #F9F6F1;
+$gray: #CBCFD4;
+$light-gray: #F4F4F4;
+$dark-gray: #8D8D8D;
+$important: #D84033;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.page-light {
+    background-color: $light;
+}
+
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 126px;
+    padding-top: 46px;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+
+    &-item {
+        margin-right: 45px;
+    }
+
+    &-link {
+        text-decoration: none;
+        color: $dark;
+    }
+}
+
+.cart {
+    background-image: url(../img/cart.svg);
+    display: block;
+    padding-left: 45px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+
+    &-count {
+        background-image: url(../img/cart-bg.svg);
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        color: #ffff;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 10px 24px;
+        display: block;
+    }
+}
+
+.btn {
+    background-color: $accent;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 18px 28px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+        flex: 0 0 50%;
+    }
+
+    .sale {
+        &-description {
+            font-size: 30px;
+        }
+
+        &-title {
+            font-size: 55px;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+.box {
+    position: relative;
+
+    &-price {
+        position: absolute;
+        right: 0;
+        top: 35px;
+        text-align: right;
+
+        &-old {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        &-new {
+            font-size: 42px;
+            font-weight: 700;
+            color: $important;
+            margin-top: 17px;
+        }
+    }
+}
